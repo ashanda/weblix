@@ -444,6 +444,7 @@ input#button-addon2 {
 
 .agencies .dropdowns {
     text-align: right;
+    display: none;
 }
 
 .agencies .dropdowns .dropdown-toggle {

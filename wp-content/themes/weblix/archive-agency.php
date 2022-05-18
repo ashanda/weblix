@@ -13,17 +13,39 @@ Template Name: Agencies
                     <a href="<?php the_field('join_url');?>"><?php the_field('section_01_sub_title');?></a></span>
             </div>
             <div class="col-sm-6 dropdowns">
-
+           
                 
 
                 <a class="dropdown-toggle" type="button" id="dropdownMenuButton02" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Province
                 </a>
+
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton02">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                <?php  
+                            $cities= get_terms(
+                                array(
+                                    'taxonomy'   => 'cities',
+                                    'hide_empty' => true,
+                                )
+                            ); 
+                            if ( ! empty( $cities ) && is_array( $cities ) ){
+                                foreach ( $cities as $citie ) {
+
+                                    $citie_link = get_term_link( $citie, 'cities' );
+
+                                    if ( is_wp_error( $citie_link ) )
+                                        continue;?>
+
+                            <a class="dropdown-item" href="<?php echo esc_url( get_term_link( $citie ) ) ?>">
+                                <?php echo $citie->name; ?>
+                            </a>
+
+                               <?php
+                                }  
+                            } ?>
+                
+                    
                 </div>
 
                 <a class="dropdown-toggle" type="button" id="dropdownMenuButton02" data-toggle="dropdown"
@@ -31,9 +53,28 @@ Template Name: Agencies
                     Categories
                 </a>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton02">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                <?php  
+                            $website_category= get_terms(
+                                array(
+                                    'taxonomy'   => 'website_category',
+                                    'hide_empty' => true,
+                                )
+                            ); 
+                            if ( ! empty( $website_category ) && is_array( $website_category ) ){
+                                foreach ( $website_category as $website_categorys ) {
+
+                                    $website_categorys_link = get_term_link( $website_categorys, 'website_category' );
+
+                                    if ( is_wp_error( $website_categorys_link ) )
+                                        continue;?>
+
+                            <a class="dropdown-item" href="<?php echo esc_url( get_term_link( $website_categorys ) ) ?>">
+                                <?php echo $website_categorys->name; ?>
+                            </a>
+
+                               <?php
+                                }  
+                            } ?>
                 </div>
 
                 <a class="dropdown-toggle" type="button" id="dropdownMenuButton02" data-toggle="dropdown"
