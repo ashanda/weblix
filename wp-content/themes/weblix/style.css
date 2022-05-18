@@ -1,0 +1,476 @@
+/*!
+Theme Name: weblix
+Theme URI: http://yogeemedia.com/
+Author: yogeemedia.com
+Author URI: http://yogeemedia.com/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: weblix
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+weblix is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+
+/* Normalize
+--------------------------------------------- */
+
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+
+/* Document
+	 ========================================================================== */
+
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+@font-face {
+    font-family: 'mokoto_glitchregular';
+    src: url("inc/fonts/mokoto_glitch-webfont.woff") format('woff2'), url("inc/fonts/mokoto_glitch-webfont.woff2") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* navbar start*/
+
+.navbar {
+    padding: 2px 20px;
+    -webkit-box-shadow: 0px 9px 32px -3px #000000;
+    box-shadow: 0px 9px 32px -3px #000000;
+}
+.navbar .search{
+    color:#000;
+}
+.navbar-brand {
+    font-family: 'mokoto_glitchregular';
+    color: red !important;
+    font-size: 40px;
+}
+
+.submit {
+    background-color: #000;
+    color: #fff !important;
+}
+
+.navbar-nav .menu-col {
+    padding: 20px 0;
+}
+
+.after-logo {
+    font-size: 12px;
+    color: #000;
+    display: block;
+}
+
+.dropdown-menu {
+    width: auto;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.88);
+    box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.88);
+}
+
+.navbar-nav li.nav-item {
+    margin: 0 10px;
+}
+
+.navbar-nav li:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* rotate caret on hover */
+
+.dropdown-menu>li>a:hover:after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+}
+
+.modal {
+    background: #0000009c;
+}
+.modal-content{
+    margin-top:50%;
+}
+.modal-backdrop {
+    z-index: 1;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.form-group.has-search {
+    margin-bottom: 0;
+}
+.fixed-top{
+    position: sticky;
+}
+
+/* navbar end */
+
+
+/* carosel start */
+
+.carousel {
+    margin-bottom: 6%;
+}
+
+.carousel-item {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto;
+    height: 500px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 400px;
+}
+
+.carousel-caption {
+    bottom: 10%;
+}
+
+
+/* cariosel end */
+
+
+/* paragraph section start*/
+
+.paragraph .content .text-content {
+    font-size: 18px;
+    line-height: 2;
+}
+
+
+/* paragraph section end*/
+
+
+/* category section start */
+.category .template {
+    padding: 0 5%;
+}
+
+.card {
+    margin: 30px 0px;
+    transition: border 0.1s, transform 0.3s;
+}
+
+.card .card-title {
+    margin-bottom: 20px;
+}
+
+.card .card-text,
+.card .card-text-right {
+    font-size: 14px;
+}
+
+/* .card:hover {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    cursor: pointer;
+} */
+
+.card .card-body .card-p {
+    
+    margin: 5px;
+}
+
+.card .card-body .card-p .col {
+    padding: 0;
+}
+
+.card .card-body .card-p .row {
+    align-items: baseline;
+}
+
+.card .card-body .card-p .user-icon {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.card .card-body .card-p .developer {
+    font-size: 12px;
+}
+.card .card-body .card-p .city {
+    font-size: 12px;
+    color:#dc3545;
+}
+.card .card-body .card-p .buttons {
+    text-align: end;
+}
+.card .buttons{
+    text-align: end;
+}
+.card .buttons .btn {
+    vertical-align: baseline;
+    padding: 0 10px;
+    font-size: 12px;
+    display: inline;
+}
+
+.card .card-body .card-text-right {
+    text-align: end;
+}
+
+.card .card-img-top {
+    transition: all .5s;
+}
+
+.card .hover-content:hover .card-img-top{
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+.card .hover-content:hover .img-caption {
+    display: block;
+}
+
+.card .hover-content {
+    overflow: hidden;
+}
+
+.card .img-caption {
+    position: absolute;
+    display: none;
+    top: 0;
+    padding: 20px;
+    width: 100%;
+}
+
+.card .img-caption a {
+    color: #fff;
+    padding: 0 5px;
+}
+.card .img-caption a fa{
+    color: #fff;
+}
+.card .share-link{
+    float: right;
+}
+.card-p i {
+    color: var(--color-two);
+    margin-right: 8px;
+}
+
+.card-p td:nth-child(1) {
+    width: 10%;
+}
+
+.card-p td:nth-child(2) {
+    width: 60%;
+}
+
+.card-p td:nth-child(3) {
+    width: 30%;
+}
+
+/* category section end */
+
+
+/* footer start */
+
+footer {
+    background-color: #202121;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer ul li {
+    line-height: 2;
+}
+
+footer ul a:hover {
+    text-decoration: none;
+    color: #E8E7E8;
+}
+
+footer .after-logo {
+    color: #fff;
+}
+
+footer .text-primary{
+	color:#afafaf!important;
+}
+.nav-item {
+  list-style-type: none;
+}
+input#button-addon2{
+    right: 0;
+    position: absolute;
+}
+/* footer end */
+
+/* single web styles */
+.single-web .left-content .icon {
+    width: 25px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.single-web .left-content .auther {
+    color: rgb(150, 1, 1);
+    font-size: 14px;
+}
+
+.single-web .tag-title {
+    font-size: 12px;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+
+.single-web .tag {
+    font-size: 14px;
+    font-weight: bold;
+    color: #919191;
+}
+
+.single-web .single-web-img {
+    margin: 2%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.single-web .single-web-img .content h3 {
+    top: 200px;
+    position: relative;
+    color: #fff;
+}
+
+/* single web styles */
+
+/* agencies styles start */
+.agencies .top-text {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.agencies .top-text a {
+    color: rgb(19, 218, 218);
+    text-decoration: none;
+}
+.agencies .dropdowns{
+    text-align: right;
+}
+.agencies .dropdowns .dropdown-toggle{
+    text-transform: uppercase;
+    margin-right: 10px;
+    border-right: 2px solid rgb(196, 195, 195);
+    padding-right: 10px;
+    font-size: 14px;
+}
+.agencies .agency-grid .box{
+    background-color: rgb(248, 248, 248);
+}
+.agencies .agency-grid .box .agency-web{
+    width: 100%;
+    height: auto;
+}
+.agencies .agency-grid .box .agency-author{
+    width: 80px;
+    text-align: center;
+    height: auto;
+    border-radius: 50%;
+    top: -40px;
+    position: relative;
+}
+.agencies .agency-grid .box .box-caption{
+    top: -20px;
+    position: relative;
+}
+.agencies .agency-grid .box .box-caption a{
+    color: #98cbcb;
+}
+/* agencies styles end */
+
+/* single agency styles start */
+.single-agency .left-sec a,
+.single-agency .right-sec a{
+    text-decoration: none;
+    color: #202121;
+}
+.single-agency .middle-sec .round-img{
+    width: 80px;
+    border-radius: 50%;
+}
+.single-agency .middle-sec a{
+    text-decoration: none;
+    color: #202121;
+}
+/* single agency styles end */
+
+/* interviews styles start */
+.interviews .red{
+    color: rgb(224, 5, 5);
+}
+.interviews .q-img img{
+    width: 100%;
+    height: auto;
+}
+/* interviews styles end */
