@@ -65,8 +65,10 @@
                                 <!-- Modal body -->
 
                                 <div class="form-group has-search">
+                                <form action="/" method="get">
                                     <span class="fa fa-search form-control-feedback"></span>
-                                    <input type="text" class="form-control" placeholder="Search">
+                                    <input type="text" class="form-control" placeholder="Search" name="s" id="search" value="<?php the_search_query(); ?>" />
+                                </form>
                                 </div>
 
 
