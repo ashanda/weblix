@@ -88,9 +88,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     -webkit-box-shadow: 0px 9px 32px -3px #000000;
     box-shadow: 0px 9px 32px -3px #000000;
 }
-.navbar .search{
-    color:#000;
+
+.navbar .search {
+    color: #000;
 }
+
 .navbar-brand {
     font-family: 'mokoto_glitchregular';
     color: red !important;
@@ -139,9 +141,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .modal {
     background: #0000009c;
 }
-.modal-content{
-    margin-top:50%;
+
+.modal-content {
+    margin-top: 50%;
 }
+
 .modal-backdrop {
     z-index: 1;
 }
@@ -165,9 +169,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .form-group.has-search {
     margin-bottom: 0;
 }
-.fixed-top{
+
+.fixed-top {
     position: sticky;
 }
+
 
 /* navbar end */
 
@@ -210,6 +216,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 
 /* category section start */
+
 .category .template {
     padding: 0 5%;
 }
@@ -228,6 +235,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     font-size: 14px;
 }
 
+
 /* .card:hover {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
@@ -235,7 +243,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 } */
 
 .card .card-body .card-p {
-    
     margin: 5px;
 }
 
@@ -255,21 +262,26 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .card .card-body .card-p .developer {
     font-size: 12px;
 }
+
 .card .card-body .card-p .city {
     font-size: 12px;
-    color:#dc3545;
+    color: #dc3545;
 }
+
 .card .card-body .card-p .buttons {
     text-align: end;
 }
-.card .buttons{
+
+.card .buttons {
     text-align: end;
 }
+
 .card .buttons .btn {
     vertical-align: baseline;
     padding: 0 10px;
     font-size: 12px;
     display: inline;
+    color: #fff;
 }
 
 .card .card-body .card-text-right {
@@ -280,10 +292,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     transition: all .5s;
 }
 
-.card .hover-content:hover .card-img-top{
+.card .hover-content:hover .card-img-top {
     opacity: 0.8;
     transform: scale(1.1);
 }
+
 .card .hover-content:hover .img-caption {
     display: block;
 }
@@ -304,12 +317,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     color: #fff;
     padding: 0 5px;
 }
-.card .img-caption a fa{
+
+.card .img-caption a fa {
     color: #fff;
 }
-.card .share-link{
+
+.card .share-link {
     float: right;
 }
+
 .card-p i {
     color: var(--color-two);
     margin-right: 8px;
@@ -326,6 +342,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .card-p td:nth-child(3) {
     width: 30%;
 }
+
 
 /* category section end */
 
@@ -354,19 +371,25 @@ footer .after-logo {
     color: #fff;
 }
 
-footer .text-primary{
-	color:#afafaf!important;
+footer .text-primary {
+    color: #afafaf!important;
 }
+
 .nav-item {
-  list-style-type: none;
+    list-style-type: none;
 }
-input#button-addon2{
+
+input#button-addon2 {
     right: 0;
     position: absolute;
 }
+
+
 /* footer end */
 
+
 /* single web styles */
+
 .single-web .left-content .icon {
     width: 25px;
     margin-right: 10px;
@@ -403,9 +426,12 @@ input#button-addon2{
     color: #fff;
 }
 
+
 /* single web styles */
 
+
 /* agencies styles start */
+
 .agencies .top-text {
     font-size: 16px;
     font-weight: 600;
@@ -415,24 +441,29 @@ input#button-addon2{
     color: rgb(19, 218, 218);
     text-decoration: none;
 }
-.agencies .dropdowns{
+
+.agencies .dropdowns {
     text-align: right;
 }
-.agencies .dropdowns .dropdown-toggle{
+
+.agencies .dropdowns .dropdown-toggle {
     text-transform: uppercase;
     margin-right: 10px;
     border-right: 2px solid rgb(196, 195, 195);
     padding-right: 10px;
     font-size: 14px;
 }
-.agencies .agency-grid .box{
+
+.agencies .agency-grid .box {
     background-color: rgb(248, 248, 248);
 }
-.agencies .agency-grid .box .agency-web{
+
+.agencies .agency-grid .box .agency-web {
     width: 100%;
     height: auto;
 }
-.agencies .agency-grid .box .agency-author{
+
+.agencies .agency-grid .box .agency-author {
     width: 80px;
     text-align: center;
     height: auto;
@@ -440,37 +471,52 @@ input#button-addon2{
     top: -40px;
     position: relative;
 }
-.agencies .agency-grid .box .box-caption{
+
+.agencies .agency-grid .box .box-caption {
     top: -20px;
     position: relative;
 }
-.agencies .agency-grid .box .box-caption a{
+
+.agencies .agency-grid .box .box-caption a {
     color: #98cbcb;
 }
+
+
 /* agencies styles end */
 
+
 /* single agency styles start */
+
 .single-agency .left-sec a,
-.single-agency .right-sec a{
+.single-agency .right-sec a {
     text-decoration: none;
     color: #202121;
 }
-.single-agency .middle-sec .round-img{
+
+.single-agency .middle-sec .round-img {
     width: 80px;
     border-radius: 50%;
 }
-.single-agency .middle-sec a{
+
+.single-agency .middle-sec a {
     text-decoration: none;
     color: #202121;
 }
+
+
 /* single agency styles end */
 
+
 /* interviews styles start */
-.interviews .red{
+
+.interviews .red {
     color: rgb(224, 5, 5);
 }
-.interviews .q-img img{
+
+.interviews .q-img img {
     width: 100%;
     height: auto;
 }
+
+
 /* interviews styles end */
