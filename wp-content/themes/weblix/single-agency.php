@@ -80,6 +80,7 @@ get_header();  ?>
                 while($post_query->have_posts() ) {
                     $post_query->the_post();
                     ?>
+                    <a href="<?php echo get_permalink( $post->ID ); ?>">  
              <?php 
                   $agency = get_field('agency');
                   
@@ -138,7 +139,7 @@ get_header();  ?>
                             <?php }else{ ?>
                                 <img class="user-icon" src="<?php echo get_template_directory_uri(); ?>/inc/img/user.jpg" alt="">
                             <?php } ?>
-                                <a class="developer"><?php echo get_the_title($postid);?></a><!-- Agency -->
+                            <a class="developer" href="<?php echo get_permalink( $postID ); ?>"><?php echo get_the_title($postID);?></a><!-- Agency -->
                                 <?php $terms = get_the_terms( $post->ID , 'cities' ); 
 
                                     foreach ( $terms as $term ) {
@@ -161,6 +162,7 @@ get_header();  ?>
                 </div>
             </div>
         </div>
+                                </a>
               <?php }else{ ?>
                   
              <?php } ?>       

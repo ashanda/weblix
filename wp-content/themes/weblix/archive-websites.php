@@ -91,7 +91,7 @@ Template Name: Website
                             <?php }else{ ?>
                                 <img class="user-icon" src="<?php echo get_template_directory_uri(); ?>/inc/img/user.jpg" alt="">
                             <?php } ?>
-                                <a class="developer"><?php echo get_the_title();?></a><!-- Agency -->
+                                <a class="developer" href="<?php echo get_permalink( $postID ); ?>"><?php echo get_the_title($postID);?></a><!-- Agency -->
                                 <?php $terms = get_the_terms( $post->ID , 'cities' ); 
 
                                     foreach ( $terms as $term ) {
