@@ -77,7 +77,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link submit" href="#">Submit Your Website</a>
+                    <a class="nav-link submit" href="<?php echo get_home_url(); ?>/contact">Submit Your Website</a>
                 </li>
             </ul>
 
